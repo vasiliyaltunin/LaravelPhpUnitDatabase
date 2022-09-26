@@ -13,12 +13,11 @@ class ExampleTest extends TestCase
     public function setup() : void
     {
         parent::setup();
+        $this->seed();
     }
     
     public function test_example()
     {
-        $this->seed();
-
         $st = Student::all();
 
         var_dump($st);
