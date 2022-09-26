@@ -10,6 +10,11 @@ class ExampleTest extends TestCase
 {
     use RefreshDatabase;
 
+    public function setup() : void
+    {
+        parent::setup();
+    }
+    
     public function test_example()
     {
         $this->seed();
